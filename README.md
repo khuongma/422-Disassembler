@@ -110,7 +110,7 @@ NONE
 Khuong Ma - khuongma@uw.edu - https://github.com/khuongma
 </li>
 <li>
-Tanvir Singh Tatla - https://github.com/tatlat
+Tanvir Singh Tatla - tatlatanvir@gmail.com - https://github.com/tatlat
 </li>
 <li>
 Jose A Palomera - 
