@@ -107,10 +107,10 @@ NONE
 ## Contributors
 <ul>
 <li>
-Khuong Ma - khuongma@uw.edu - [Github](https://github.com/khuongma)
+Khuong Ma - khuongma@uw.edu - https://github.com/khuongma
 </li>
 <li>
-Tanvir Singh Tatla - [Github](https://github.com/tatlat)
+Tanvir Singh Tatla - https://github.com/tatlat
 </li>
 <li>
 Jose A Palomera - 
