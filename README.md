@@ -116,7 +116,7 @@ Tanvir Singh Tatla - https://github.com/tatlat
 Jose A Palomera - 
 </li>
 <li>
-Luna Alison Alvarez -
+Luna Alison Alvarez - lunaalisonalvarez@gmail.com - https://github.com/cestlou
 </li>
 </ul>
 
