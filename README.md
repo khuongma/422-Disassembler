@@ -113,7 +113,7 @@ Khuong Ma - khuongma@uw.edu - https://github.com/khuongma
 Tanvir Singh Tatla - tatlatanvir@gmail.com - https://github.com/tatlat
 </li>
 <li>
-Jose A Palomera - 
+Jose A Palomera - josea.palomera@hotmail.com - https://github.com/joseapalomera
 </li>
 <li>
 Luna Alison Alvarez - lunaalisonalvarez@gmail.com - https://github.com/cestlou
