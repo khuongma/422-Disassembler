@@ -52,7 +52,7 @@
 <!-- ABOUT THE PROJECT -->
 ### Built With
 
-* [Assembly](https://curlie.org/Computers/Programming/Languages/Assembly/)
+* [68K Assembly](https://curlie.org/Computers/Programming/Languages/Assembly/)
 
 
 <!-- GETTING STARTED -->
