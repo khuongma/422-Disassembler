@@ -10,7 +10,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
 [![Contributors][contributors-shield]][contributors-url]
-[![Watchers][watchers-shield]]
+![Watchers][watchers-shield]
 
 
 <!-- PROJECT ICON -->
