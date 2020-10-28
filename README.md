@@ -10,6 +10,8 @@
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
 [![Contributors][contributors-shield]][contributors-url]
+[![Watchers][watchers-shield]
+
 
 <!-- PROJECT ICON -->
 <br />
@@ -125,6 +127,7 @@ Project Link: [https://github.com/khuongma/422-Disassembler](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[watchers-shield]: https://img.shields.io/github/watchers/khuongma/422-Disassembler.svg?style=flat-square
 [contributors-shield]: https://img.shields.io/github/contributors/khuongma/422-Disassembler.svg?style=flat-square
 [contributors-url]: https://github.com/khuongma/422-Disassembler/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/khuongma/422-Disassembler.svg?style=flat-square
