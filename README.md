@@ -41,6 +41,7 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
+  * [Progress Report One](#progress-report-one)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -52,10 +53,14 @@
 
 
 <!-- ABOUT THE PROJECT -->
+## About the Project
+
 ### Built With
 
 * [68K Assembly](https://curlie.org/Computers/Programming/Languages/Assembly/)
 
+### Progress Report One
+* [Living Document Here](https://lucid.app/invitations/accept/bae297d4-375c-4c5f-a761-090763cd7ce5)
 
 <!-- GETTING STARTED -->
 ## Getting Started
