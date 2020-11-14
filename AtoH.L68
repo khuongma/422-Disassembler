@@ -1,0 +1,64 @@
+00001000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 11/13/2020 11:43:08 PM
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Title      :
+00000000                             3  * Written by :  Awake Team
+00000000                             4  * Date       :
+00000000                             5  * Description:
+00000000                             6  *-----------------------------------------------------------
+00001000                             7      ORG    $1000
+00001000                             8  START:                  ; first instruction of program
+00001000                             9  
+00001000  103C 0002                 10      MOVE.B  #2,D0       ; get string input from keyboard
+00001004  4E4F                      11      TRAP    #15
+00001006  3001                      12      MOVE.W  D1,D0
+00001008  7200                      13      MOVE.L  #$00000000,D1
+0000100A                            14      
+0000100A                            15  ; convert ASCII to Hexidecimal
+0000100A  E981                      16  AtoH    ASL.L   #4,D1   ; shift output left 1 hex digit (4 bits)
+0000100C  1811                      17          MOVE.B  (A1),D4 ; move char from string to data reg 4
+0000100E  5249                      18          ADDA    #1,A1   ; increment string index
+00001010  B83C 0030                 19          CMP.B   #$30,D4 ; cannot be less than 30
+00001014  6D00 001E                 20          BLT     INV_CHAR
+00001018  B83C 0046                 21          CMP.B   #$46,D4 ; cannot be greater than 46
+0000101C  6E00 0016                 22          BGT     INV_CHAR
+00001020  B83C 0039                 23          CMP.B   #$39,D4
+00001024  6E1E                      24          BGT.B   LETTER  ; if char bigger than #39, branch letter
+00001026  0404 0030                 25          SUBI.B  #$30,D4 ; otherwise subtract $30 to get number
+0000102A  D284                      26          ADD.L   D4,D1   ; add to output
+0000102C  5340                      27          SUB.W   #1,D0   ; decrement counter
+0000102E  66DA                      28          BNE     AtoH    ; if counter not zero, loop
+00001030  6000 001C                 29          BRA     DONE    ; done
+00001034                            30         
+00001034                            31  INV_CHAR
+00001034  43F9 00001052             32          LEA     INVCHAR,A1
+0000103A  103C 000E                 33          MOVE.B  #14,D0 
+0000103E  4E4F                      34          TRAP    #15
+00001040  6000 000C                 35          BRA     DONE
+00001044                            36  ; convert ASCII to hex letter 
+00001044  0404 0037                 37  LETTER  SUBI.B  #$37,D4 ; subtract $37 to get letter
+00001048  D284                      38          ADD.L   D4,D1   ; add to output
+0000104A  5340                      39          SUB.W   #1,D0   ; decrement counter
+0000104C  66BC                      40          BNE     AtoH    ; loop if counter not 0
+0000104E                            41  DONE
+0000104E  FFFF FFFF                 42          SIMHALT
+00001052                            43  
+00001052                            44  * Put variables and constants here
+00001052= 45 52 52 4F 52 3A ...     45  INVCHAR DC.B    'ERROR: INVALID HEX CHARACTER',0
+0000106F                            46      END    START        ; last line of source
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+ATOH                100A
+DONE                104E
+INVCHAR             1052
+INV_CHAR            1034
+LETTER              1044
+START               1000
